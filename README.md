@@ -1,6 +1,6 @@
 # About This Project
 
-# Motivation:
+## Motivation:
 
 I want to purchase a so called "House Hack", where you buy a 1-4 family property,
 live in one room and rent out the other rooms/units.
@@ -18,23 +18,23 @@ Next I looked up my MLS and noticed that the agent portal has an export to csv o
 I could get my realator to supply me with this file, say, once a week, but I didn't want to wait
 and I wanted more frequent updates than that.
 
-# My Solution:
+## My Solution:
 
-## Part one
+### Part one
 Create a web scrapper for my MLS using python.
 This scrapper is meant to be ran daily. It creates a csv file
 for each saved search (I am looking in a few locations) and spits all the listings
 to the file.
 
-## Part two
+### Part two
 Read each daily report file and calculate the most attractive properties.
 *more details on calculations*
 
-## Part three
+### Part three
 Trigger this report when I get my daily email with new or status changed properties.
 
 
-# Outcomes and What I Learned:
+## Outcomes and What I Learned:
 Firstly, i'd like to say how much I appreciated this little project.
 It made me feel like I was in college again writing a nifty little program.
 
