@@ -99,5 +99,8 @@ def analyzeDeal(propertyPrice, downPayment, interestRate, yearlyPropertyTaxes, y
     print('cashFlow ', end='')
     print(cashFlow)
 
+    print('cashFlow with 10% prop. mang', end='')
+    print(cashFlow - ((scheduledMonthlyIncome * monthsInYear) * .1))
+
     print('cashOnCash ', end='')
     print(cashOnCash)
