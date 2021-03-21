@@ -102,11 +102,13 @@ https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809
 Numbers Work- No Modification
 
 
+# SOLD
 # 2438 S 7th St Milwaukee, WI 53215
 # lincoln village really nice: should casd flow nicelyy plus in better less crime area
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210309211751390640000000
 # analyzeDeal(propertyPrice=129900, downPayment=12490, interestRate=0.035, yearlyPropertyTaxes=2822, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=1600, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
 
+# SOLD
 # 1547 S 12th St, 1549 Milwaukee, WI 53204
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210304201901169140000000
 # analyzeDeal(propertyPrice=124000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=1530, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=1500, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
@@ -122,15 +124,18 @@ Numbers work: Silver Spring
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210315153401627572000000
 # analyzeDeal(propertyPrice=149000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=1976, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=1800, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
 
+# PENDING
 # 6738 W Chambers St, 6742 Milwaukee, WI 53210
 # lenox heights: cash flow afff
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210316143857665163000000
 # analyzeDeal(propertyPrice=120000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=2310, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=1645, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
 
+
 # 2435 S 19th St Milwaukee, WI 53215
 # lincoln village long term tenants: great cashflow
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210316023719611911000000
 # analyzeDeal(propertyPrice=169900, downPayment=8000, interestRate=0.035, yearlyPropertyTaxes=2775, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=2000, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
 
 
 # 2603 N 2nd St Milwaukee, WI 53212
