@@ -1,0 +1,87 @@
+from investment import analyzeDeal 
+
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210312225032791117000000
+# analyzeDeal(propertyPrice=156000, downPayment=8000, interestRate=0.035, yearlyPropertyTaxes=3460, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=1600, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# to look at further
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210209003209400803000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210221204942781000000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210203223058892922000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210226194404169018000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+
+
+# LETS DO A SHOWING
+# Riverwest: 3 unit doable
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20201102183413948103000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=169900, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=2111, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=1625, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+# avg rent 2 bed 900 X 2 + avg rent 3 unit 1000 X 3
+# analyzeDeal(propertyPrice=169900, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=2111, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=2800, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# LETS DO SHOWING
+# Riverwest: 3 unit. good cashflow, need to see when leases expire
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20200921193319317241000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=338000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=5531, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=3100, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# LETS DO SHOWING
+# Riverwest: cheap with rebate
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210112183324767463000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=159000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=2562, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=1927, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# LETS DO SHOWING
+# Riverwest: 3 unit expensive but might work. not even adding a 2 bed yet
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210302193505263372000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=329000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=7223, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2915, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# Riverwest: like it but needs neg
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210305155907302365000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=275000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=6373, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2275, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+
+# Riverwest: miiight work. guessing on rent
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210212223629246705000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=199900, downPayment=8000, interestRate=0.035, yearlyPropertyTaxes=4827, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=1800, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+
+# Riverwest: miiight work. guessing on rentdsfgsdfdsf
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210226194404169018000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=224900, downPayment=5129, interestRate=0.035, yearlyPropertyTaxes=4827, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2000, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+#raise rents and neg
+# analyzeDeal(propertyPrice=210000, downPayment=5129, interestRate=0.035, yearlyPropertyTaxes=4827, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2200, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+
+# ----------------------
+
+# Riverwest: no way
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210305183015627096000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=216000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=6105, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=1660, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# Riverwest: bungalow doable!
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210130155045280030000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=189900, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=3567, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=1875, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# Riverwest: nice with parking? needs some negotiating
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20201113015244957200000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=269900, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=8342, yearlyLandlordInsurance=1000, scheduledMonthlyIncome=2400, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# Riverwest: 3 unit lease will expire and raise rents then work??
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210111213741378035000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=284900, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=6613, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2520, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# Riverwest: doable
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210305155907302365000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=249900, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=4696, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2325, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# Riverwest: ehhhh not so great. I think rents are low.
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210225155005938129000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=220000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=5957, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=1625, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+# analyzeDeal(propertyPrice=220000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=5957, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2000, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+
+# Riverwest: 2 duplexs on onw prop. interesting.. not really working tho needs neg
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20201117225614424562000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=330000, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=7787, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2775, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=5000, log=True)
+
+# Riverwest: neg or raise rent
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210226213707309523000000?_filter=StandardStatus+Eq+%27Active%27+And+PropertyClass+Eq+%27MultiFamily%27%2C%27Two-Family%27+And+MlsId+Eq+%2720080502212544227270000000%27%2C%2720010602000846355519000000%27+And+ListPrice+Bt+101000.0%2C350000.0+And+Location+Eq+polygon%28%2743.08620585973485+-87.91141425061035%2C43.05422844927357+-87.91016970562744%2C43.05510648324155+-87.88823996472168%2C43.07492161990803+-87.88137350964355%2C43.086832701010216+-87.87832652020263%27%29&listing_id=20210226213707309523000000
+# analyzeDeal(propertyPrice=229900, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=7787, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=1685, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3200, log=True)
+
+analyzeDeal(propertyPrice=249900, downPayment=12000, interestRate=0.035, yearlyPropertyTaxes=5940, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2265, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3200, log=True)

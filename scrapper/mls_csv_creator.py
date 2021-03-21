@@ -7,7 +7,7 @@ class MLSDailyCSVCreator:
     allRows = []
 
     def __init__(self, savedSearchKey):
-        self.fileName = str(savedSearchKey) + '__' + datetime.today().strftime('%Y-%m-%d') + '.csv'
+        self.fileName = 'output/' + str(savedSearchKey) + '__' + datetime.today().strftime('%Y-%m-%d') + '.csv'
     
     def addListing(self, dictionary):
         headings = list(dictionary.keys())

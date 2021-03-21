@@ -1,11 +1,13 @@
-def Unit:
+import datetime
+
+class unit:
     numberOfRooms = 0
     fullBaths = 0
     halfBaths = 0
     rent = 0
     squareFeet = 0
     vaccancy = ''
-    leaseExpires = Date()
+    leaseExpires = datetime.datetime.now()
 
     def __init__(self, numberOfRooms, fullBaths, halfBaths, rent, squareFeet, vaccancy, leaseExpires):
         self.numberOfRooms = numberOfRooms

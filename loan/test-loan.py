@@ -1,4 +1,4 @@
-from analyze_deal import analyzeDeal
+from investment import analyzeDeal
 
 # Websites:
 # https://www.trulia.com/
@@ -153,7 +153,7 @@ from analyze_deal import analyzeDeal
 
 # interesting
 # https://my.flexmls.com/chrisantonicci/search/newsfeeds/listings/20210319010152569079000000
-analyzeDeal(propertyPrice=249900, downPayment=10000, interestRate=0.035, yearlyPropertyTaxes=4695, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2325, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
+# analyzeDeal(propertyPrice=249900, downPayment=10000, interestRate=0.035, yearlyPropertyTaxes=4695, yearlyLandlordInsurance=1500, scheduledMonthlyIncome=2325, totalSquareFeet=1650, lotSize=0.1, additionalOperatingExpenses=3545, log=True)
 
 # 1547 S 12th St, 1549 Milwaukee, WI 53204
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210304201901169140000000

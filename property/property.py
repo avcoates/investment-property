@@ -1,4 +1,4 @@
-def Property:
+class property:
     id = ''
     status = ''
     daysOnMarket = 0
@@ -17,7 +17,7 @@ def Property:
         status, 
         daysOnMarket,
         streetAddress,
-        portalMunicipality,
+        postalMunicipality,
         buildYear,
         price,
         propertyTaxes,

@@ -31,3 +31,5 @@ def getUpFrontInvestment(purchasePrice, downPayment):
     upFrontMIP = 0.0175
 
     return downPayment + purchasePrice * upFrontMIP
+
+    getMonthlyPrincipalAndInterest
