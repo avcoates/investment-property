@@ -51,7 +51,18 @@ def getCashOnCash(cashFlow, totalInitialInvestment):
 def getCashFlow(NOI, NOE):
     return NOI - NOE
 
-def analyzeDeal(propertyPrice, downPayment, interestRate, yearlyPropertyTaxes, yearlyLandlordInsurance, scheduledMonthlyIncome, totalSquareFeet, lotSize, additionalOperatingExpenses, log=False):
+def analyzeDeal(
+    propertyPrice,
+    downPayment,
+    interestRate,
+    yearlyPropertyTaxes,
+    yearlyLandlordInsurance,
+    scheduledMonthlyIncome,
+    additionalOperatingExpenses,
+    totalSquareFeet,
+    lotSize,
+    log=False):
+
     principal = propertyPrice - downPayment
     monthlyPITI = getMonthlyPrincipalAndIntrestTaxesAndInsurance(principal, downPayment, interestRate, yearsOfLoan, yearlyPropertyTaxes, yearlyLandlordInsurance)
     monthlyPI = getMonthlyPrincipalAndInterest(principal, interestRate, yearsOfLoan)
