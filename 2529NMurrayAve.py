@@ -10,7 +10,7 @@ from investment import analyzeDeal
 # Market rents
 # 2 bed 1000
 # 4 bed 1800
-analyzeDeal(propertyPrice=275000,
+analyzeDeal(propertyPrice=269900,
   downPayment=12000,
   interestRate=0.035,
   yearlyPropertyTaxes=8342,

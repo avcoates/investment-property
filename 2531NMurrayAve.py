@@ -21,23 +21,12 @@ from investment import analyzeDeal
 
 # Current price
 # Market rent 2 bed 1000 x 2, 1 bed 900 x 1
-# analyzeDeal(propertyPrice=284900,
-#     downPayment=12000,
-#     interestRate=0.035,
-#     yearlyPropertyTaxes=6613,
-#     yearlyLandlordInsurance=1500,
-#     scheduledMonthlyIncome=2900,
-#     totalSquareFeet=1650,
-#     lotSize=0.1,
-#     additionalOperatingExpenses=5009,
-#     log=True)
-
-analyzeDeal(propertyPrice=180000,
+analyzeDeal(propertyPrice=284900,
     downPayment=12000,
     interestRate=0.035,
-    yearlyPropertyTaxes=3812,
+    yearlyPropertyTaxes=6613,
     yearlyLandlordInsurance=1500,
-    scheduledMonthlyIncome=1900,
+    scheduledMonthlyIncome=2900,
     totalSquareFeet=1650,
     lotSize=0.1,
     additionalOperatingExpenses=5009,

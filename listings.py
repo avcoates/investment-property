@@ -177,3 +177,16 @@ from investment import analyzeDeal
 #     lotSize=0.1,
 #     additionalOperatingExpenses=6000,
 #     log=True)
+
+# COWWWW
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210322030851990179000000
+analyzeDeal(propertyPrice=210000,
+    downPayment=8000,
+    interestRate=0.035,
+    yearlyPropertyTaxes=3612,
+    yearlyLandlordInsurance=1500,
+    scheduledMonthlyIncome=2500,
+    totalSquareFeet=1650,
+    lotSize=0.1,
+    additionalOperatingExpenses=4260,
+    log=True)

@@ -1,5 +1,5 @@
 from investment import analyzeDeal 
-
+# SOOOOOOOOOOLD
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210322124912101637000000
 # bay view
 # 2/2
