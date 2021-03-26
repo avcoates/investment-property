@@ -157,8 +157,23 @@ from investment import analyzeDeal
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210111213741378035000000
 
 # BayView
-# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210111213741378035000000
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210322124912101637000000
 
 # Riverwest
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210305155907302365000000
 # https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210212223629246705000000
+
+
+
+# south south west
+# https://my.flexmls.com/chrisantonicci/search/saved_searches/20210317211216945809000000/listings/20210324001135098041000000
+# analyzeDeal(propertyPrice=334900,
+#     downPayment=12000,
+#     interestRate=0.035,
+#     yearlyPropertyTaxes=8419,
+#     yearlyLandlordInsurance=2400,
+#     scheduledMonthlyIncome=2700,
+#     totalSquareFeet=1650,
+#     lotSize=0.1,
+#     additionalOperatingExpenses=6000,
+#     log=True)

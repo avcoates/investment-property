@@ -57,14 +57,14 @@ from investment import analyzeDeal
 #     log=True)
 
 
-analyzeDeal(propertyPrice=215000,
-    downPayment=12000,
-    interestRate=0.035,
-    yearlyPropertyTaxes=3678,
-    yearlyLandlordInsurance=1500,
-    # scheduledMonthlyIncome=2000,
-    scheduledMonthlyIncome=1800,
-    totalSquareFeet=1650,
-    lotSize=0.1,
-    additionalOperatingExpenses=4000,
-    log=True)
+# analyzeDeal(propertyPrice=215000,
+#     downPayment=12000,
+#     interestRate=0.035,
+#     yearlyPropertyTaxes=3678,
+#     yearlyLandlordInsurance=1500,
+#     # scheduledMonthlyIncome=2000,
+#     scheduledMonthlyIncome=1800,
+#     totalSquareFeet=1650,
+#     lotSize=0.1,
+#     additionalOperatingExpenses=4000,
+#     log=True)
